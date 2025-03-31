@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costura Creativa - Diseños Personalizados</title>
+    <meta name="description" content="Costura personalizada con diseños únicos hechos a tu medida">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- Menú de navegación -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-cut text-primary-500 text-2xl mr-2"></i>
+                            <span class="font-serif text-xl font-bold text-secondary-600">Costura Creativa</span>
+                        </a>
+                    </div>
+                    <!-- Menú principal -->
+                    <div class="hidden md:ml-8 md:flex md:space-x-8">
+                        <a href="#inicio"
+                            class="border-primary-500 text-secondary-600 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium hover:border-primary-400 hover:text-primary-500 transition-colors duration-200">
+                            Inicio
+                        </a>
+                        <a href="#servicios"
+                            class="border-transparent text-secondary-500 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium hover:border-primary-400 hover:text-primary-500 transition-colors duration-200">
+                            Servicios
+                        </a>
+                        <a href="#galeria"
+                            class="border-transparent text-secondary-500 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium hover:border-primary-400 hover:text-primary-500 transition-colors duration-200">
+                            Galería
+                        </a>
+                        <a href="#proceso"
+                            class="border-transparent text-secondary-500 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium hover:border-primary-400 hover:text-primary-500 transition-colors duration-200">
+                            Proceso
+                        </a>
+                        <a href="#contacto"
+                            class="border-transparent text-secondary-500 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium hover:border-primary-400 hover:text-primary-500 transition-colors duration-200">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+                <!-- Menú secundario -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#contacto"
+                        class="text-secondary-600 hover:text-primary-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        <i class="fas fa-calendar-alt mr-1"></i> Cita
+                    </a>
+                    <a href="tel:+1234567890"
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200">
+                        <i class="fas fa-phone mr-1"></i> Llamar
+                    </a>
+                </div>
+                <!-- Botón móvil -->
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button"
+                        class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-secondary-500 hover:text-primary-500 hover:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div class="hidden mobile-menu md:hidden absolute w-full bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary-500">
+                    Inicio
+                </a>
+                <a href="#servicios"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-secondary-600 hover:text-primary-500 hover:bg-gray-50">
+                    Servicios
+                </a>
+                <a href="#galeria"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-secondary-600 hover:text-primary-500 hover:bg-gray-50">
+                    Galería
+                </a>
+                <a href="#proceso"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-secondary-600 hover:text-primary-500 hover:bg-gray-50">
+                    Proceso
+                </a>
+                <a href="#contacto"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-secondary-600 hover:text-primary-500 hover:bg-gray-50">
+                    Contacto
+                </a>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="flex items-center px-5 space-x-3">
+                        <a href="#contacto"
+                            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-secondary-600 bg-gray-100 hover:bg-gray-200">
+                            <i class="fas fa-calendar-alt mr-2"></i> Cita
+                        </a>
+                        <a href="tel:+1234567890"
+                            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-500 hover:bg-primary-600">
+                            <i class="fas fa-phone mr-2"></i> Llamar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen max-h-[600px] flex items-center justify-center overflow-hidden" id="inicio">
+        <!-- Fondo con overlay -->
+        <div class="absolute inset-0">
+            <img src="sources/bg-costura.jpg" alt="Máquina de coser y materiales de costura"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
+
+        <!-- Contenido de presentacion -->
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
+                Arte en tela creado <span class="text-primary-400">exclusivamente</span> para ti
+            </h1>
+            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                Diseños personalizados y confección artesanal que reflejan tu estilo único. Cada pieza es una obra de
+                arte hecha a tu medida.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#galeria"
+                    class="px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    Ver Galería <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#servicios"
+                    class="px-8 py-3 bg-white bg-opacity-90 hover:bg-opacity-100 text-secondary-600 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <i class="fas fa-scissors mr-2"></i> Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de características -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                    ¿Por qué elegirnos?
+                </h2>
+                <p class="text-secondary-500 max-w-2xl mx-auto">
+                    Calidad, creatividad y atención personalizada en cada detalle
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 service-card">
+                    <div class="text-primary-500 mb-4 text-4xl">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-3">Medidas perfectas</h3>
+                    <p class="text-secondary-500">
+                        Cada prenda se ajusta exactamente a tus medidas para un resultado impecable y cómodo. Utilizamos
+                        técnicas de sastrería tradicional combinadas con tecnología moderna.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 service-card">
+                    <div class="text-primary-500 mb-4 text-4xl">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-3">Diseño personalizado</h3>
+                    <p class="text-secondary-500">
+                        Colaboramos contigo para crear diseños únicos que reflejen tu personalidad y estilo. Desde el
+                        boceto inicial hasta el producto final, cada detalle es cuidadosamente considerado.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 service-card">
+                    <div class="text-primary-500 mb-4 text-4xl">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-3">Calidad premium</h3>
+                    <p class="text-secondary-500">
+                        Utilizamos solo los mejores materiales y técnicas de confección para garantizar durabilidad y
+                        elegancia. Telas seleccionadas de proveedores éticos y de alta calidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="py-16 bg-primary-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+                ¿Listo para tu próximo diseño personalizado?
+            </h2>
+            <p class="text-rose-200 text-xl mb-8">
+                Agenda una consulta gratuita para discutir tu proyecto y recibir un presupuesto sin compromiso.
+            </p>
+            <a href="#contacto"
+                class="inline-block px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                <i class="fas fa-calendar-alt mr-2"></i> Agendar Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- Galería de Diseños -->
+    <section class="py-16 bg-white" id="galeria">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                    Nuestra Galería de Diseños
+                </h2>
+                <p class="text-secondary-500 max-w-2xl mx-auto">
+                    Inspírate con algunos de nuestros trabajos recientes
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 gallery-item">
+                    <img src="sources/vestido1.jpg" alt="Traje formal masculino azul marino con chaleco"
+                        class="w-full max-h-[400px] object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold text-lg">Vestido Casual</span>
+                    </div>
+                </div>
+
+                <!-- Ver más -->
+                <div class="flex justify-center lg:col-span-3 mt-6">
+                    <a href="#contacto"
+                        class="px-6 py-2 border-2 border-primary-500 text-primary-500 font-semibold rounded-lg hover:bg-primary-500 hover:text-white transition-colors duration-300">
+                        Solicitar Presupuesto <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Trabajo -->
+    <section class="py-16 bg-gray-50" id="servicios">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                    Servicios que Ofrecemos
+                </h2>
+                <p class="text-secondary-500 max-w-2xl mx-auto">
+                    Especializados en diferentes áreas de la costura creativa
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Servicio 1 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-primary-500 h-full">
+                    <div class="text-primary-500 mb-3 text-3xl">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-2">Ropa Casual</h3>
+                    <ul class="text-secondary-500 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Vestidos informales</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Blusas y camisas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Pantalones y faldas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Conjuntos casuales</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="text-primary-500 font-semibold">Desde $120</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-primary-500 h-full">
+                    <div class="text-primary-500 mb-3 text-3xl">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-2">Ropa Formal</h3>
+                    <ul class="text-secondary-500 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Vestidos de gala</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Trajes elegantes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Ropa para eventos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Conjuntos ejecutivos</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="text-primary-500 font-semibold">Desde $250</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-primary-500 h-full">
+                    <div class="text-primary-500 mb-3 text-3xl">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-2">Moda Nupcial</h3>
+                    <ul class="text-secondary-500 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Vestidos de novia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Trajes de novio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Vestidos de dama de honor</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Accesorios personalizados</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="text-primary-500 font-semibold">Desde $500</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-primary-500 h-full">
+                    <div class="text-primary-500 mb-3 text-3xl">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-secondary-600 mb-2">Modificaciones</h3>
+                    <ul class="text-secondary-500 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Ajustes de tallas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Reparaciones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Rediseño de prendas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-2 text-sm"></i>
+                            <span>Personalización</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="text-primary-500 font-semibold">Desde $40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                    Lo que dicen nuestros clientes
+                </h2>
+                <p class="text-secondary-500 max-w-2xl mx-auto">
+                    Experiencias reales de personas que confiaron en nosotros
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente satisfecha"
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-secondary-600">María González</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary-500 italic">
+                        "Mi vestido de novia fue exactamente como lo soñé. El equipo entendió perfectamente lo que
+                        quería y el resultado superó todas mis expectativas. ¡Recomiendo 100% sus servicios!"
+                    </p>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente satisfecho"
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-secondary-600">Carlos Mendoza</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary-500 italic">
+                        "Necesitaba un traje a medida para una conferencia importante y el resultado fue impecable. La
+                        atención al detalle y el ajuste perfecto hicieron que valiera cada centavo."
+                    </p>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente satisfecha"
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-secondary-600">Ana Rodríguez</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary-500 italic">
+                        "He encargado varios vestidos para eventos y siempre quedan perfectos. Saben aconsejar sobre
+                        telas y diseños que favorecen mi figura. ¡No compro en tiendas desde que los descubrí!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <!-- Proceso de Trabajo - Versión Responsive -->
+    <section class="py-16 bg-gray-50" id="proceso">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                    Nuestro Proceso Creativo
+                </h2>
+                <p class="text-secondary-500 max-w-2xl mx-auto">
+                    Así transformamos tus ideas en prendas únicas
+                </p>
+            </div>
+
+            <!-- Versión Mobile/Tablet (vertical) -->
+            <div class="lg:hidden">
+                <div class="space-y-8">
+                    <!-- Paso 1 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white text-lg font-bold border-4 border-white shadow-lg">
+                                1
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Consulta Inicial</h3>
+                            <p class="text-secondary-500">
+                                Analizamos tus necesidades, estilo y preferencias en una reunión personalizada.
+                                Discutimos
+                                el tipo de prenda, ocasión, preferencias de tela y presupuesto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white text-lg font-bold border-4 border-white shadow-lg">
+                                2
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Diseño y Patrones</h3>
+                            <p class="text-secondary-500">
+                                Creamos bocetos personalizados y desarrollamos los patrones específicos para tu cuerpo.
+                                Seleccionamos telas y materiales de calidad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white text-lg font-bold border-4 border-white shadow-lg">
+                                3
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Toma de Medidas</h3>
+                            <p class="text-secondary-500">
+                                Realizamos un análisis completo de tus medidas corporales con técnicas profesionales.
+                                Consideramos tu postura y proporciones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white text-lg font-bold border-4 border-white shadow-lg">
+                                4
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Confección</h3>
+                            <p class="text-secondary-500">
+                                Nuestros expertos confeccionan tu prenda con atención meticulosa a cada detalle.
+                                Utilizamos
+                                técnicas de alta costura.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Paso 5 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white text-lg font-bold border-4 border-white shadow-lg">
+                                5
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Pruebas y Ajustes</h3>
+                            <p class="text-secondary-500">
+                                Realizamos pruebas de ajuste para perfeccionar cada detalle. Solo damos por terminada la
+                                prenda cuando cumple con nuestros estándares de excelencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Versión Desktop (timeline horizontal) -->
+            <div class="hidden lg:block">
+                <div class="relative">
+                    <!-- Línea de tiempo -->
+                    <div
+                        class="absolute left-1/2 top-1/2 h-2 w-full bg-primary-400 transform -translate-x-1/2 -translate-y-1/2">
+                    </div>
+
+                    <div class="flex justify-between relative z-10">
+                        <!-- Paso 1 -->
+                        <div class="w-1/5 px-4 text-center">
+                            <div
+                                class="mx-auto w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg mb-10">
+                                1
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Consulta</h3>
+                            <p class="text-secondary-500 text-sm">
+                                Analizamos tus necesidades en una reunión personalizada.
+                            </p>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="w-1/5 px-4 text-center">
+                            <div
+                                class="mx-auto w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg mb-10">
+                                2
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Diseño</h3>
+                            <p class="text-secondary-500 text-sm">
+                                Creamos bocetos y patrones específicos para tu cuerpo.
+                            </p>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="w-1/5 px-4 text-center">
+                            <div
+                                class="mx-auto w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg mb-10">
+                                3
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Medidas</h3>
+                            <p class="text-secondary-500 text-sm">
+                                Análisis completo de tus medidas con técnicas profesionales.
+                            </p>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="w-1/5 px-4 text-center">
+                            <div
+                                class="mx-auto w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg mb-10">
+                                4
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Confección</h3>
+                            <p class="text-secondary-500 text-sm">
+                                Confección con atención meticulosa a cada detalle.
+                            </p>
+                        </div>
+
+                        <!-- Paso 5 -->
+                        <div class="w-1/5 px-4 text-center">
+                            <div
+                                class="mx-auto w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg mb-10">
+                                5
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-primary-500 mb-2">Ajustes</h3>
+                            <p class="text-secondary-500 text-sm">
+                                Pruebas para perfeccionar hasta el último detalle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Descripciones detalladas (Desktop) -->
+                <div class="mt-16 grid grid-cols-5 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-secondary-500 text-sm">
+                            Analizamos tus necesidades, estilo y preferencias en una reunión personalizada (presencial o
+                            virtual).
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-secondary-500 text-sm">
+                            Creamos bocetos personalizados y desarrollamos los patrones específicos. Seleccionamos telas
+                            de
+                            calidad.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-secondary-500 text-sm">
+                            Realizamos un análisis completo de tus medidas corporales. Consideramos tu postura y
+                            proporciones.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-secondary-500 text-sm">
+                            Nuestros expertos confeccionan tu prenda con técnicas de alta costura para garantizar
+                            calidad.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <p class="text-secondary-500 text-sm">
+                            Realizamos pruebas de ajuste hasta alcanzar la perfección. Tu satisfacción es nuestra
+                            prioridad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA al final del proceso -->
+            <div class="mt-16 text-center">
+                <a href="#contacto"
+                    class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-calendar-alt mr-2"></i> Agendar Consulta Inicial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Diseñadora de Costura Creativa" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-secondary-600 mb-4">
+                        Sobre Mí
+                    </h2>
+                    <p class="text-secondary-500 mb-4">
+                        Soy Laura Méndez, diseñadora y costurera profesional con más de 15 años de experiencia en la
+                        industria de la moda. Mi pasión por la costura comenzó desde niña, observando a mi abuela crear
+                        prendas maravillosas en su taller.
+                    </p>
+                    <p class="text-secondary-500 mb-4">
+                        Después de formarme en las mejores escuelas de diseño y trabajar con reconocidas casas de moda,
+                        decidí fundar Costura Creativa para ofrecer un servicio más personalizado y cercano, donde cada
+                        cliente pueda ver materializados sus sueños en tela.
+                    </p>
+                    <p class="text-secondary-500 mb-6">
+                        Mi filosofía se basa en tres principios: calidad excepcional, atención al detalle y satisfacción
+                        total del cliente. Cada prenda que sale de mi taller lleva no solo mi sello de calidad, sino
+                        también un pedacito de mi corazón.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-primary-100 text-primary-600 px-4 py-2 rounded-lg">
+                            <i class="fas fa-certificate mr-2"></i> Titulada en Diseño de Moda
+                        </div>
+                        <div class="bg-primary-100 text-primary-600 px-4 py-2 rounded-lg">
+                            <i class="fas fa-medal mr-2"></i> Premio Nacional de Artesanía Textil
+                        </div>
+                        <div class="bg-primary-100 text-primary-600 px-4 py-2 rounded-lg">
+                            <i class="fas fa-star mr-2"></i> 15+ años de experiencia
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="py-16 bg-gray-50" id="contacto">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <!-- Info de contacto -->
+                    <div class="md:w-1/2 bg-primary-500 p-8 text-white">
+                        <h2 class="font-serif text-3xl font-bold mb-6">Contáctanos</h2>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Dirección</h4>
+                                    <p>Calle Creatividad 456, Colonia Moda, Ciudad Textil, CP 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Teléfono</h4>
+                                    <p>+52 55 1234 5678</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p>contacto@costuracreativa.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <i class="fas fa-clock mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Horario</h4>
+                                    <p>Lunes a Viernes: 10:00 - 19:00</p>
+                                    <p>Sábados: 10:00 - 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="font-semibold mb-4">Síguenos</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com/costuracreativa" target="_blank"
+                                class="text-white hover:text-primary-200 text-xl">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/costuracreativa" target="_blank"
+                                class="text-white hover:text-primary-200 text-xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://pinterest.com/costuracreativa" target="_blank"
+                                class="text-white hover:text-primary-200 text-xl">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="font-serif text-2xl font-semibold text-secondary-600 mb-6">Envía tu consulta</h3>
+
+                        <form class="space-y-4" id="contactForm">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-secondary-500 mb-1">Nombre
+                                    completo *</label>
+                                <input type="text" id="nombre" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-secondary-500 mb-1">Email
+                                    *</label>
+                                <input type="email" id="email" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition">
+                            </div>
+
+                            <div>
+                                <label for="telefono"
+                                    class="block text-sm font-medium text-secondary-500 mb-1">Teléfono</label>
+                                <input type="tel" id="telefono"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition">
+                            </div>
+
+                            <div>
+                                <label for="servicio" class="block text-sm font-medium text-secondary-500 mb-1">Servicio
+                                    de interés *</label>
+                                <select id="servicio" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition">
+                                    <option value="">Seleccione un servicio</option>
+                                    <option>Ropa Casual</option>
+                                    <option>Ropa Formal</option>
+                                    <option>Moda Nupcial</option>
+                                    <option>Modificaciones</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-secondary-500 mb-1">Mensaje
+                                    *</label>
+                                <textarea id="mensaje" rows="4" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:shadow-md transition-all duration-300">
+                                Enviar Mensaje <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <div class="h-96 w-full">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888244552543!2d-99.16948492416462!3d19.42702074091748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1711846186349!5m2!1ses-419!2smx"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-serif text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cut text-primary-400 mr-2"></i> Costura Creativa
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Transformando ideas en prendas únicas desde 2010. Especializados en diseño personalizado y
+                        confección artesanal de alta calidad.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/costuracreativa" target="_blank"
+                            class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/costuracreativa" target="_blank"
+                            class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://pinterest.com/costuracreativa" target="_blank"
+                            class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-pinterest-p text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Inicio</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Servicios</a></li>
+                        <li><a href="#galeria"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Galería</a></li>
+                        <li><a href="#proceso"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Proceso</a></li>
+                        <li><a href="#contacto"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Ropa
+                                Casual</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Ropa
+                                Formal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Moda
+                                Nupcial</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors duration-200">Modificaciones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary-400"></i>
+                            <span class="text-gray-300">Calle Creatividad 456, Ciudad Textil</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-primary-400"></i>
+                            <span class="text-gray-300">+52 55 1234 5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-primary-400"></i>
+                            <span class="text-gray-300">contacto@costuracreativa.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-primary-400"></i>
+                            <span class="text-gray-300">Lun-Vie: 10:00 - 19:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Costura Creativa. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Diseñado con <i class="fas fa-heart text-primary-400"></i> para amantes de la
+                    moda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5216643939396" target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-colors duration-200 z-40">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript para el menú móvil -->
+    <script src="script.js"></script>
+
+    <!-- Estilos para animaciones -->
+
+</body>
+
+</html>

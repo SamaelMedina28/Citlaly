@@ -1,0 +1,44 @@
+
+        /* Animaciones */
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Lightbox */
+        #lightbox {
+            display: none;
+        }
+
+        #lightbox.active {
+            display: flex;
+        }
+
+        /* Efecto para las cards de servicios */
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto para imágenes de la galería */
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+
+        /* Estilo para el botón de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
